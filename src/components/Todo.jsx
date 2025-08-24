@@ -7,7 +7,6 @@ const Todo = () => {
 
 const [TODOLIST, setToDoList] = useState(localStorage.getItem("todos")?JSON.parse(localStorage.getItem("todos")):[]);
 const inputRef=useRef();
-
 const add=()=>{
     const inputText=inputRef.current.value.trim();
     if(inputText===""){
