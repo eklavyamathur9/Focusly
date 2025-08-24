@@ -36,8 +36,6 @@ Focusly is a simple and elegant **To-Do List application** that helps you stay p
 
 👉 [Check out Focusly live here](https://focusly-three.vercel.app/)
 
-*(replace with your Vercel/Netlify deployment link once you host it)*
-
 ---
 
 ## ⚡ Installation & Setup
