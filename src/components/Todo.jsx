@@ -1,5 +1,8 @@
 import React, { useEffect, useRef, useState} from 'react'
 import Todoitems from './Todoitems'
+import { DndContext, closestCenter } from "@dnd-kit/core";
+import { arrayMove, SortableContext, verticalListSortingStrategy } from "@dnd-kit/sortable";
+
 const Todo = () => {
 
 const [TODOLIST, setToDoList] = useState(localStorage.getItem("todos")?JSON.parse(localStorage.getItem("todos")):[]);
@@ -35,6 +38,19 @@ const toggle=(id)=>{
         })
     })
 }
+const handleDragEnd = (event) => {
+  const { active, over } = event;
+  if (!over) return; // prevent error if dropped outside
+  
+  if (active.id !== over.id) {
+    setToDoList((prev) => {
+      const oldIndex = prev.findIndex((todo) => todo.id === active.id);
+      const newIndex = prev.findIndex((todo) => todo.id === over.id);
+      return arrayMove(prev, oldIndex, newIndex);
+    });
+  }
+};
+
 useEffect(()=>{
     localStorage.setItem("todos",JSON.stringify(TODOLIST));
 },[TODOLIST])
@@ -51,14 +67,24 @@ useEffect(()=>{
 {/*-------------input box--------------*/}
     <div className='flex items-center my-2 bg-gray-200 rounded-full'>
         <input ref={inputRef} className='bg-transparent border-0 outline-none flex-1 h-11 pl-6 pr-2 placeholder:text-slate-600' type="text" placeholder='Add your task' />
-        <button onClick={add} className='border-none rounded-full bg-cyan-500 w-25 h-11 text-white text-lg font-medium cursor-pointer'>ADD +</button>
+        <button onClick={add} className='border-none rounded-full bg-cyan-500 w-24 h-11 text-white text-lg font-medium cursor-pointer'>ADD +</button>
     </div>
 {/*-------------TODOLIST--------------*/}
-    <div>
-    {TODOLIST.map((item,index)=>{
-        return <Todoitems key={index} text={item.text} id={item.id} isComplete={item.isComplete} deleteTodo={deleteTodo} toggle={toggle}/>
-    })}
-    </div>
+    <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
+    <SortableContext items={TODOLIST.map(item => item.id)} strategy={verticalListSortingStrategy}>
+        {TODOLIST.map((item) => (
+        <Todoitems
+            key={item.id}
+            id={item.id}
+            text={item.text}
+            isComplete={item.isComplete}
+            deleteTodo={deleteTodo}
+            toggle={toggle}
+        />
+        ))}
+    </SortableContext>
+    </DndContext>
+
       
     </div>
   )
