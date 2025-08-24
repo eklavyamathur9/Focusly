@@ -1,12 +1,92 @@
-# React + Vite
+Got it 👍 You can add a **Live Demo** segment to your README. Here’s the updated **README.md** with that included:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# ✅ Focusly – To-Do List App
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*by Eklavya Mathur*
 
-## Expanding the ESLint configuration
+Focusly is a simple and elegant **To-Do List application** that helps you stay productive by keeping track of your daily tasks. It’s lightweight, responsive, and built with React.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+
+* Add tasks easily with a clean input box
+* Mark tasks as **complete/incomplete** with a toggle
+* Delete tasks with a single click
+* Tasks are **saved in local storage**, so they persist even after refreshing
+* Minimal and modern **UI design**
+* Fast and responsive
+
+---
+
+## 🛠️ Tech Stack
+
+* **React.js** – Frontend framework
+* **Tailwind CSS** – Styling
+* **LocalStorage API** – Data persistence
+
+---
+
+## 📸 Screenshot
+
+<img width="476" height="589" alt="image" src="https://github.com/user-attachments/assets/09ed05e6-93a6-45f7-8276-fad1d8149804" />
+
+
+---
+
+## 🌐 Live Demo
+
+👉 [Check out Focusly live here](https://your-deployment-link.com)
+
+*(replace with your Vercel/Netlify deployment link once you host it)*
+
+---
+
+## ⚡ Installation & Setup
+
+Clone the repository and run locally:
+
+```bash
+# Clone repo
+git clone https://github.com/eklavyamathur9/focusly.git  
+
+# Enter project directory
+cd focusly  
+
+# Install dependencies
+npm install  
+
+# Start development server
+npm start
+```
+
+---
+
+## 📂 Project Structure
+
+```
+focusly/
+│── public/
+│── src/
+│   │── components/
+│   │   ├── Todo.jsx
+│   │   ├── Todoitems.jsx
+│   │── App.jsx
+│   │── index.js
+│── package.json
+│── tailwind.config.js
+│── README.md
+```
+
+---
+
+## ✨ Author
+
+**Eklavya Mathur**
+🔗 [GitHub](https://github.com/eklavyamathur9)
+
+---
+
+Would you like me to also **add a deployment guide (Vercel/Netlify)** so that you can quickly deploy and get the **live link** for the README?
