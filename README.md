@@ -1,7 +1,3 @@
-Got it 👍 You can add a **Live Demo** segment to your README. Here’s the updated **README.md** with that included:
-
----
-
 # ✅ Focusly – To-Do List App
 
 *by Eklavya Mathur*
@@ -86,7 +82,3 @@ focusly/
 
 **Eklavya Mathur**
 🔗 [GitHub](https://github.com/eklavyamathur9)
-
----
-
-Would you like me to also **add a deployment guide (Vercel/Netlify)** so that you can quickly deploy and get the **live link** for the README?
