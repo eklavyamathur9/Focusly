@@ -1,4 +1,4 @@
-# ✅ Focusly – To-Do List App
+# ![tick](https://github.com/user-attachments/assets/2638aec9-16fe-481f-b1c7-95c54be9e0ca) Focusly – To-Do List App
 
 *by Eklavya Mathur*
 
@@ -34,7 +34,7 @@ Focusly is a simple and elegant **To-Do List application** that helps you stay p
 
 ## 🌐 Live Demo
 
-👉 [Check out Focusly live here](https://your-deployment-link.com)
+👉 [Check out Focusly live here](https://focusly-three.vercel.app/)
 
 *(replace with your Vercel/Netlify deployment link once you host it)*
 
