@@ -1,4 +1,4 @@
-# ![tick](https://github.com/user-attachments/assets/2638aec9-16fe-481f-b1c7-95c54be9e0ca) Focusly – To-Do List App
+# <img width="40" height="40" alt="tick" src="https://github.com/user-attachments/assets/a86c3d10-93ac-45dd-b568-03a39dc42b9b" /> Focusly – To-Do List App
 
 *by Eklavya Mathur*
 
